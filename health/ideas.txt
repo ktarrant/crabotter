@@ -1,0 +1,11 @@
+Health Concept ---
+
+# Concept
+
+Initial idea comes from frustration with planning a week's meals. Portions, timing, difficulty, spoilage, tools, ingredients, allergies... these are just some of the issues that people have to cope with before they have a home cooked meal on their table.
+
+What we need is a tool that asks us how we want to eat throughout the week, gives us suggestions for recipes and dishes that meet our needs, and generates a combined grocery list for the week for making those dishes. Finally, it helps us schedule when in the week we will go to the store, cook the food, and how to portion the food out throughout the week.
+
+# Starting Point
+
+A big part of this will be finding recipes. We will need to collect recipes from at least one location. We will need to evaluate these recipes, for their nutritional value, serving size, number of servings made, preperation time, 
