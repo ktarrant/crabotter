@@ -1,5 +1,4 @@
 import os
-import dbinfo
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
@@ -66,31 +65,6 @@ STATICFILES_FINDERS = [
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = "mui7547z+92vln=ry2%^7v3^$3o)rs*doba3$hfso#=p=t4^lz"
-
-TEMPLATES = [
-    {
-        "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [
-            os.path.join(PACKAGE_ROOT, "templates"),
-        ],
-        "APP_DIRS": True,
-        "OPTIONS": {
-            "debug": DEBUG,
-            "context_processors": [
-                "django.contrib.auth.context_processors.auth",
-                "django.template.context_processors.debug",
-                "django.template.context_processors.i18n",
-                "django.template.context_processors.media",
-                "django.template.context_processors.static",
-                "django.template.context_processors.tz",
-                "django.template.context_processors.request",
-                "django.contrib.messages.context_processors.messages",
-                "account.context_processors.account",
-                "pinax_theme_bootstrap.context_processors.theme",
-            ],
-        },
-    },
-]
 
 MIDDLEWARE_CLASSES = [
     "django.contrib.sessions.middleware.SessionMiddleware",
