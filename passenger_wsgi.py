@@ -13,6 +13,6 @@ sys.path.insert(0,cwd+'/env/bin')
 sys.path.insert(0,cwd+'/env/lib/python2.7/site-packages/django')
 sys.path.insert(0,cwd+'/env/lib/python2.7/site-packages')
 
-os.environ['DJANGO_SETTINGS_MODULE'] = "health.settings.prod"
+os.environ['DJANGO_SETTINGS_MODULE'] = "health.settings.dev"
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
