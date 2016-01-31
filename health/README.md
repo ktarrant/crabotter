@@ -1,4 +1,4 @@
-# health
+# {{ project_name }}
 
 ## Getting Started
 
