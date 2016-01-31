@@ -1,0 +1,40 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}crabotter{% endblock %}
+
+{% block body_class %}recipes{% endblock %}
+
+{% block body_base %}
+
+<section id="latest" class="two">
+	<div class="container">
+
+		<header>
+			<h2>Latest Recipes</h2>
+		</header>
+
+		{% if latest_recipe_list %}
+		<p>This season the perch is tasting mighty ripe.</p>
+		
+		<div class="row">
+			{% for recipe in latest_recipe_list %}
+			<div class="container">
+				<article class="item">
+					<a href="/recipes/{{ recipe.id }}/" class="image fit"><img src="{{ recipe.imageUrl }}" alt="" /></a>
+					<header>
+						<h3>{{ recipe.name }}</h3>
+					</header>
+				</article>
+			</div>
+			{% endfor %}
+		</div>
+
+		{% else %}
+		<p>No recipes are available.</p>
+		{% endif %}
+	</div>
+</section>
+
+{% endblock %}

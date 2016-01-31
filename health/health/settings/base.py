@@ -137,6 +137,7 @@ INSTALLED_APPS = [
 
     # project
     "health",
+    "recipes"
 ]
 
 # A sample logging configuration. The only tangible logging
